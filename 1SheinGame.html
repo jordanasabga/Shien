@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video Template</title>
+<!--links to CSS stylesheet-->
+<link rel="stylesheet" type="text/css" href="finish.css">
+</head>
+
+<body>
+
+
+	<nav>
+		<span class ="logo">SHEIN</span>
+		<span class="nav-items">
+			<a href="shienspoof.html"> Home</a>
+			<a href="1SheinGame.html"> Game</a>
+			<a href="aboutpage.html"> About</a>
+		</span>
+	</nav>
+
+<!--html5 video-->
+<!--give id of video-->
+<video id="video" width="600" height="500" autoplay muted loop>
+  <source src="Assets/Naked_Avatar/Naked_Avatar.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+	<br>
+	<br>
+
+<!--in case you might want to embed audio files-->
+<!--
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+-->
+
+<p id="text">It's time to build an outfit!<br>You have two choices for your top! What would you like?</p>
+	<br>
+	<br>
+
+<!--Images with overlay-->
+
+<div id="buttoncontainer">
+
+<div class="image-container" id="firstcontainer" onclick="shirt()">
+	<img id="firstOp" src="Assets/Shein_Pics/Graphics/Shein_Shirt_Graphic-1.png"
+	width="200" height="200"> 
+	
+	<div class="overlay">
+		<p>Choose Shirt</p>
+	</div>
+</div>
+
+
+
+<div class="image-container" id="secondcontainer" onclick="hoodie()">
+	<img id="secondOp" src="Assets/Shein_Pics/Graphics/Shein_Hoodie_Graphic-1.png"
+width="200" height="200">
+	<div class="overlay">
+		<p>Choose Hoodie</p>
+	</div>
+</div>
+
+</div>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<!-- <div id="select">
+	<button class="sleep" onclick="sleep()">Shirt</button>
+	<button class="code" onclick="code()">Hoodie</button>
+</div> -->
+
+</body>
+
+<!-- loads JavaScript file -->
+<script src="finish.js"></script>
+
+</html>
